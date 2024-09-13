@@ -1,14 +1,14 @@
 [
   {
-    "value": "tomar 3L de água por dia",
-    "checked": true
-  },
-  {
-    "value": "Medidar 5 minutos todos os dias",
+    "value": "Estudar todos os dias",
     "checked": false
   },
   {
-    "value": "Ler por 15 minutos",
+    "value": "Bebar 2L de água por dia",
+    "checked": false
+  },
+  {
+    "value": "Exercicio de aerobicos por 20 minutos todos os dia",
     "checked": false
   }
 ]
