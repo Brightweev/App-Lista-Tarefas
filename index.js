@@ -1,16 +1,38 @@
-// essas barras são para criar comentarios
-//console.log("Hello World");
+const {select} = require('@inquirer/prompts')
 
-let meta = {
-    value: "ler um livro por mês",
-    checked: true,
+const start = async () => {
+    while (true){
+
+        const opcao = await select({
+            message: "Menu >",
+            choices: [
+                {
+                    name: "Cadastrar meta",
+                    value: "cadastrar"
+                },
+                {
+                    name: "Listar metas",
+                    value: "listar"
+                },
+                {
+                    name:"Sair",
+                    value: "sair"
+                }
+            ]
+        })
+
+        switch(opcao) {
+            case "cadastrar":
+                console.log("vamos cadastrar")
+                break
+            case "listar":
+                console.log("vamos listar")
+                break
+            case "sair":
+                console.log("Até a próxima")
+                return
+        }
+    }
 }
 
-let metas =[
-    meta,
-    {
-        value: "caminhar 20 minnutos",
-        checked: false,
-    }
-]
-console.log(metas(0).value)
+start()
